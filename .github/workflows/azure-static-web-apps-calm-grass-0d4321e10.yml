@@ -21,10 +21,13 @@ jobs:
           lfs: false
 
       # Setup Node.js environment
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14' # Specify your Node.js version here, adjust as necessary
+      - steps:
+  - uses: actions/checkout@v3
+  - name: Setup Node.js
+    uses: actions/setup-node@v2
+    with:
+      node-version: '20'
+ # Specify your Node.js version here, adjust as necessary
 
       # Install and build your application
       - name: Install and build
