@@ -1,0 +1,55 @@
+/* Basic Reset for Styling Consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-page Background Styles */
+#homepage {
+    background-image: url('path_to_global_map_image.jpg'); /* Update with your image path */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #4a5568; /* Tailwind zinc-600 */
+}
+
+/* Dark mode adjustments */
+.dark #homepage {
+    background-image: url('C:\Users\Paul Ojo\Cloud_Project\Residue_Estimator\globalmap.jpeg'); /* Update with your dark mode image path */
+    color: #cbd5e0; /* Tailwind zinc-300 */
+}
+
+#homepage h1 {
+    font-size: 1.875rem; /* 30px if 1rem = 16px */
+    text-align: center;
+    margin-bottom: 1rem; /* 16px */
+    color: #805ad5; /* Tailwind purple-600 */
+}
+
+.dark #homepage h1 {
+    color: #d6bcfa; /* Tailwind purple-300 */
+}
+
+#homepage p {
+    font-size: 1.125rem; /* 18px */
+    text-align: center;
+    margin-bottom: 1.5rem; /* 24px */
+}
+
+#homepage button {
+    background-color: #4299e1; /* Tailwind blue-500 */
+    color: white;
+    padding: 0.5rem 1rem; /* 8px 16px */
+    border-radius: 0.375rem; /* 6px */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#homepage button:hover {
+    background-color: #3182ce; /* Darken button on hover - Tailwind blue-600 */
+}
