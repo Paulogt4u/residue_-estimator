@@ -7,7 +7,7 @@
 
 /* Full-page Background Styles */
 #homepage {
-    background-image: url('path_to_global_map_image.jpg'); /* Update with your image path */
+    background-image: url('C:\Users\Paul Ojo\Cloud_Project\Residue_Estimator\globalmap.jpeg'); /* Update with your image path */
     background-size: cover;
     background-position: center;
     min-height: 100vh; /* Full height of the viewport */
